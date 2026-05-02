@@ -18,25 +18,28 @@ export default function HomePage() {
       <section className="hero" aria-label="Hero">
         <Image
           src="/img/hero.png"
-          alt="Cafe Zen signature eggs benedict with home fries"
+          alt="Cafe Zen signature brunch"
           fill
           priority
           unoptimized
-          style={{ objectFit: 'cover', objectPosition: '70% center' }}
+          style={{ objectFit: 'cover', objectPosition: '65% center' }}
         />
         <div className="hero-overlay" aria-hidden="true" />
 
         <div className="container hero-content">
-          <span className="hero-eyebrow fade-in">Kitsilano, Vancouver · Since 1989</span>
+          <span className="hero-eyebrow fade-in">Kitsilano, Vancouver · Est. 1989</span>
+
           <h1 className="fade-in delay-1">
-            Where Every Morning<br />
-            <em>Feels Like Home</em>
+            Good food.<br />
+            <em>Warm mornings.</em>
           </h1>
+
           <p className="hero-sub fade-in delay-2">
-            Brunch <span>·</span> Lunch <span>·</span> Good Vibes
+            Brunch <span>·</span> Lunch <span>·</span> Kitsilano
           </p>
+
           <div className="hero-cta fade-in delay-3">
-            <Link href="/menu" className="btn btn--primary">Our Menus</Link>
+            <Link href="/menu" className="btn btn--primary">View Menus</Link>
             <Link href="/contact" className="btn btn--outline">Find Us</Link>
           </div>
         </div>
@@ -54,7 +57,7 @@ export default function HomePage() {
             <div className="about-visual fade-in-left">
               <div className="about-zen-box" aria-hidden="true">
                 <span className="about-zen-char">禅</span>
-                <span className="about-zen-label">Zen · Peace · Nourishment</span>
+                <span className="about-zen-label">Peace · Nourishment · Community</span>
               </div>
               <div className="about-year-pill" aria-label="Since 1989">
                 <span className="year-num">1989</span>
@@ -64,24 +67,24 @@ export default function HomePage() {
 
             <div className="fade-in-right">
               <span className="section-label">Our Story</span>
-              <h2 className="section-title">Like eating at your grandma's — but better coffee</h2>
+              <h2 className="section-title">A cozy corner of Kits,<br />going strong since 1989</h2>
 
-              <p>Cafe Zen has been serving delicious, down-to-earth food in the heart of Kitsilano for over 35 years. We strive to provide a cozy, calm space where you can have a happy stomach and a great start to your day without straining your wallet.</p>
+              <p>Cafe Zen has been a Kitsilano favourite for over 35 years — a place where the food is honest, the prices are fair, and you always feel at home. We believe a great meal doesn&rsquo;t need to be complicated or expensive.</p>
 
-              <p>Warm wood floors. Chalkboard specials. Real food made with care. This is the neighbourhood spot that&rsquo;s been here through all of it — and we&rsquo;re not going anywhere.</p>
+              <p>Warm floors, chalkboard specials, and real food made with care. The neighbourhood spot that&rsquo;s been here through all of it.</p>
 
               <div className="about-features">
                 <div className="about-feature">
                   <div className="about-feature-icon" aria-hidden="true">🍳</div>
-                  <p><strong>Fresh brunch &amp; lunch daily</strong> — served until 4 PM, seven days a week.</p>
+                  <p><strong>Fresh brunch &amp; lunch daily</strong> — open 8 AM to 4 PM, seven days a week.</p>
                 </div>
                 <div className="about-feature">
                   <div className="about-feature-icon" aria-hidden="true">🌿</div>
-                  <p><strong>Approachable prices</strong> — good food shouldn&rsquo;t cost a fortune.</p>
+                  <p><strong>Honest, approachable prices</strong> — good food shouldn&rsquo;t cost a fortune.</p>
                 </div>
                 <div className="about-feature">
                   <div className="about-feature-icon" aria-hidden="true">📍</div>
-                  <p><strong>Right in the heart of Kits</strong> — 1631 Yew St, steps from the beach.</p>
+                  <p><strong>1631 Yew St</strong> — steps from Kitsilano Beach, heart of the neighbourhood.</p>
                 </div>
               </div>
 
@@ -107,7 +110,7 @@ export default function HomePage() {
             <span className="section-label" style={{ justifyContent: 'center' }}>Come Find Us</span>
             <h2 className="section-title">Hours &amp; Location</h2>
             <p className="section-intro" style={{ margin: '0 auto' }}>
-              Open every day — rain or shine, because this is Vancouver and you&rsquo;re hungry.
+              Open every day — rain or shine. This is Vancouver and you&rsquo;re hungry.
             </p>
           </div>
 
@@ -129,7 +132,7 @@ export default function HomePage() {
                 <span className="hours-day">Saturday &amp; Sunday</span>
                 <span className="hours-time">8 AM – 4 PM</span>
               </div>
-              <p className="hours-note">Last seating 30 min before closing. Kitchen closes at 3:30 PM.</p>
+              <p className="hours-note">Kitchen closes at 3:30 PM. Last seating 30 min before close.</p>
 
               <div style={{ marginTop: 32, paddingTop: 24, borderTop: '1px solid var(--cream-dark)' }}>
                 <p className="script" style={{ marginBottom: 14 }}>
@@ -153,7 +156,7 @@ export default function HomePage() {
                 <span className="location-icon" aria-hidden="true">🏠</span>
                 <div>
                   <strong style={{ fontSize: '0.65rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#bbb', display: 'block', marginBottom: 4 }}>Address</strong>
-                  <span>1631 Yew St<br />Vancouver, BC, Canada</span>
+                  <span>1631 Yew St, Vancouver, BC</span>
                 </div>
               </div>
 
@@ -169,9 +172,7 @@ export default function HomePage() {
                 <span className="location-icon" aria-hidden="true">🚗</span>
                 <div>
                   <strong style={{ fontSize: '0.65rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#bbb', display: 'block', marginBottom: 4 }}>Getting Here</strong>
-                  <span style={{ fontSize: '0.9rem', color: '#888' }}>
-                    Street parking on Yew St. Steps from Kitsilano Beach Park.
-                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#888' }}>Street parking on Yew St. Steps from Kitsilano Beach Park.</span>
                 </div>
               </div>
 
@@ -200,12 +201,12 @@ export default function HomePage() {
       <section className="instagram-section" aria-label="Follow us on Instagram">
         <div className="container instagram-inner">
           <div className="fade-in">
-            <span className="section-label" style={{ justifyContent: 'center', color: 'var(--green-pale)', marginBottom: 20 }}>
-              What&rsquo;s on today
+            <span className="section-label" style={{ justifyContent: 'center', color: 'var(--green-pale)', marginBottom: 24 }}>
+              What&rsquo;s fresh today
             </span>
-            <h2>Follow Our Daily Specials</h2>
-            <p style={{ color: 'rgba(255,255,255,0.50)', maxWidth: 440, margin: '16px auto 0', fontSize: '0.95rem', lineHeight: 1.8 }}>
-              Our chalkboard changes every morning. The fastest way to know what&rsquo;s fresh is our Instagram.
+            <h2>Follow Us on Instagram</h2>
+            <p style={{ color: 'rgba(255,255,255,0.45)', maxWidth: 420, margin: '16px auto 0', fontSize: '0.95rem', lineHeight: 1.8 }}>
+              Our chalkboard changes every morning. See what&rsquo;s fresh before you come in.
             </p>
             <a
               href="https://www.instagram.com/cafezenonyew/"
@@ -213,7 +214,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="instagram-handle"
             >
-              <IgIcon size={18} />
+              <IgIcon size={16} />
               @cafezenonyew
             </a>
           </div>

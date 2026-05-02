@@ -87,9 +87,9 @@ export default function Reviews() {
     <section className="section reviews-section" aria-label="Customer reviews">
       <div className="container">
 
-        <div className="reviews-header fade-in">
-          <span className="section-label">What Kitsilano Says</span>
-          <h2 className="section-title">35 Years Worth of Happy Regulars</h2>
+        <div className="reviews-header fade-in" style={{ textAlign: 'center' }}>
+          <span className="section-label" style={{ justifyContent: 'center' }}>What Kitsilano Says</span>
+          <h2 className="section-title">35 Years of Happy Regulars</h2>
 
           <div className="reviews-overall">
             <div className="reviews-overall-score">

@@ -18,31 +18,34 @@ export default function FoodGallery() {
           <span className="section-label">Fresh Every Morning</span>
           <h2 className="section-title">From Our Kitchen</h2>
         </div>
+      </div>
 
-        <div className="gallery-grid">
-          {PHOTOS.map((photo, i) => (
-            <div
-              key={photo.src}
-              className={`gallery-item fade-in delay-${Math.min(i % 3 + 1, 4)}`}
-            >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                unoptimized
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          ))}
-        </div>
+      {/* Full-bleed grid */}
+      <div className="gallery-grid-fullbleed">
+        {PHOTOS.map((photo, i) => (
+          <div
+            key={photo.src}
+            className={`gallery-item fade-in delay-${Math.min(i % 3 + 1, 4)}`}
+          >
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              fill
+              unoptimized
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+        ))}
+      </div>
 
+      <div className="container">
         <div className="gallery-cta fade-in">
           <Link href="/menu" className="btn btn--primary">See Our Full Menu</Link>
           <a
             href="https://www.instagram.com/cafezenonyew/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--wood"
+            className="btn btn--outline"
           >
             More on Instagram
           </a>

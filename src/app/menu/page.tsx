@@ -16,10 +16,10 @@ export default function MenuPage() {
       {/* ── PAGE HERO ──────────────────────────────────────── */}
       <section className="page-hero" aria-label="Page header">
         <div className="container">
-          <span className="script fade-in" style={{ color: 'rgba(255,255,255,0.80)' }}>What&rsquo;s cooking today</span>
-          <h1 className="fade-in delay-1">Our Menus</h1>
-          <p style={{ color: 'rgba(255,255,255,0.75)', marginTop: 12, fontSize: '1.05rem' }} className="fade-in delay-2">
-            Fresh, honest food — the same way we&rsquo;ve been making it since 1989.
+          <span className="page-hero-eyebrow fade-in">Café Zen on Yew · Kitsilano</span>
+          <h1 className="fade-in delay-1" style={{ color: 'var(--white)', position: 'relative', zIndex: 1 }}>Our Menus</h1>
+          <p style={{ color: 'rgba(255,255,255,0.55)', marginTop: 16, fontSize: '0.95rem', letterSpacing: '0.02em', position: 'relative', zIndex: 1 }} className="fade-in delay-2">
+            Good ingredients, fair prices, food that fills you up.
           </p>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function MenuPage() {
             {/* BRUNCH CARD */}
             <article className="menu-card fade-in-left" aria-label="Brunch menu">
               <div className="menu-card-header">
-                <span className="script" style={{ color: 'rgba(255,255,255,0.75)' }}>Served 8 AM – 4 PM daily</span>
+                <span className="card-eyebrow">Served daily · 8 AM – 4 PM</span>
                 <h2>Brunch Menu</h2>
               </div>
               <div className="menu-card-body">
@@ -80,7 +80,7 @@ export default function MenuPage() {
             {/* LUNCH CARD */}
             <article className="menu-card fade-in-right" aria-label="Lunch menu">
               <div className="menu-card-header wood-header">
-                <span className="script" style={{ color: 'rgba(255,255,255,0.8)' }}>Served 11 AM – 4 PM daily</span>
+                <span className="card-eyebrow">Served daily · 11 AM – 4 PM</span>
                 <h2>Lunch Menu</h2>
               </div>
               <div className="menu-card-body">
@@ -107,22 +107,18 @@ export default function MenuPage() {
 
           </div>
 
-          {/* Info strip */}
-          <div className="fade-in" style={{
-            background: 'var(--cream-dark)', borderRadius: 12, padding: '32px 40px',
-            display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            gap: 24, textAlign: 'center', border: '1px solid rgba(0,0,0,0.06)'
-          }}>
+          {/* Features — editorial numbered grid */}
+          <div className="menu-features fade-in">
             {[
-              { icon: '🌱', title: 'Vegetarian Options', desc: 'Clearly marked on the menu' },
-              { icon: '🫙', title: 'Made Fresh Daily', desc: 'No reheating. No shortcuts.' },
-              { icon: '💰', title: 'Fair Prices', desc: "Good food doesn't have to be expensive" },
-              { icon: '🗣', title: 'Ask About Allergies', desc: 'Our staff are happy to help' },
+              { n: '01', title: 'Vegetarian Options', desc: 'Clearly marked on the menu for every dish.' },
+              { n: '02', title: 'Made Fresh Daily', desc: 'No reheating. No shortcuts. Ever.' },
+              { n: '03', title: 'Fair Prices', desc: "Great food shouldn't cost a fortune." },
+              { n: '04', title: 'Allergy Friendly', desc: 'Our staff are happy to help with any questions.' },
             ].map(item => (
-              <div key={item.title}>
-                <div style={{ fontSize: '2rem', marginBottom: 8 }}>{item.icon}</div>
-                <h4 style={{ fontSize: '0.9rem', marginBottom: 4 }}>{item.title}</h4>
-                <p style={{ fontSize: '0.82rem', color: '#777', margin: 0 }}>{item.desc}</p>
+              <div key={item.title} className="menu-feature-item">
+                <span className="menu-feature-num">{item.n}</span>
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
               </div>
             ))}
           </div>

@@ -9,11 +9,11 @@ export default function Footer() {
 
           <div className="footer-brand">
             <Image
-              src="/img/logo.png"
+              src="/img/logo-jukebox-bg-removed.png"
               alt="Café Zen on Yew"
-              width={64}
-              height={64}
-              style={{ marginBottom: 20, filter: 'brightness(0) invert(1)', opacity: 0.85 }}
+              width={80}
+              height={80}
+              style={{ marginBottom: 20, filter: 'brightness(0) invert(1)', opacity: 0.80 }}
             />
             <p className="footer-tagline">Kitsilano, Vancouver · Est. 1989</p>
             <p className="footer-desc">Good food, warm space, honest prices. 35 years and still going strong in the heart of Kits.</p>

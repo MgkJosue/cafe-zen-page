@@ -16,12 +16,10 @@ export default function ContactPage() {
       {/* ── PAGE HERO ──────────────────────────────────────── */}
       <section className="page-hero" aria-label="Page header">
         <div className="container">
-          <span className="script fade-in" style={{ color: 'rgba(255,255,255,0.80)' }}>
-            We&rsquo;re right in the heart of Kits
-          </span>
-          <h1 className="fade-in delay-1">Hours &amp; Contact</h1>
-          <p style={{ color: 'rgba(255,255,255,0.75)', marginTop: 12, fontSize: '1.05rem' }} className="fade-in delay-2">
-            We&rsquo;re easy to find — and even easier to love.
+          <span className="page-hero-eyebrow fade-in">1631 Yew St · Kitsilano, Vancouver</span>
+          <h1 className="fade-in delay-1" style={{ color: 'var(--white)', position: 'relative', zIndex: 1 }}>Hours &amp; Contact</h1>
+          <p style={{ color: 'rgba(255,255,255,0.55)', marginTop: 16, fontSize: '0.95rem', position: 'relative', zIndex: 1 }} className="fade-in delay-2">
+            Open daily 8 AM – 4 PM · Steps from Kitsilano Beach
           </p>
         </div>
       </section>
@@ -55,10 +53,7 @@ export default function ContactPage() {
             {/* Hours Card */}
             <div className="contact-card fade-in-left">
               <h3 style={{ justifyContent: 'space-between' }}>
-                <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <span style={{ fontSize: '1.4rem' }} aria-hidden="true">🕗</span>
-                  Hours of Operation
-                </span>
+                <span>Hours of Operation</span>
                 <OpenStatus />
               </h3>
 
@@ -108,10 +103,7 @@ export default function ContactPage() {
 
             {/* Location Card */}
             <div className="contact-card fade-in-right">
-              <h3>
-                <span style={{ fontSize: '1.4rem' }} aria-hidden="true">📍</span>
-                Location &amp; Contact
-              </h3>
+              <h3>Location &amp; Contact</h3>
 
               <div className="contact-detail">
                 <span className="contact-detail-icon" aria-hidden="true">🏠</span>
@@ -182,10 +174,7 @@ export default function ContactPage() {
 
             {/* Instagram Card */}
             <div className="contact-card instagram-card fade-in-left">
-              <h3>
-                <span style={{ fontSize: '1.4rem' }} aria-hidden="true">📸</span>
-                Follow Us on Instagram
-              </h3>
+              <h3>Follow Us on Instagram</h3>
 
               <p className="ig-desc">
                 Our daily specials live on Instagram. Before you come in, check what&rsquo;s on
@@ -208,10 +197,7 @@ export default function ContactPage() {
 
             {/* Menu CTA Card */}
             <div className="contact-card fade-in-right" style={{ background: 'var(--cream-dark)', borderTop: '3px solid var(--red)' }}>
-              <h3>
-                <span style={{ fontSize: '1.4rem' }} aria-hidden="true">🍽</span>
-                Ready to Eat?
-              </h3>
+              <h3>Ready to Eat?</h3>
 
               <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: 24 }}>
                 Take a look at our brunch and lunch menus. Rotating specials every day — the full
