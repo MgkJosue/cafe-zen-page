@@ -27,12 +27,8 @@ export default function Navbar() {
       <nav id="navbar" aria-label="Main navigation">
         <div className="container nav-inner">
 
-          <Link href="/" className="nav-logo" aria-label="Cafe Zen on Yew — Home" onClick={close}>
-            <Image src="/img/logo.png" alt="Cafe Zen logo" width={48} height={48} priority />
-            <span className="nav-logo-text">
-              <span className="brand-name">Café Zen</span>
-              <span className="brand-sub">on Yew · Kitsilano</span>
-            </span>
+          <Link href="/" className="nav-logo" aria-label="Café Zen on Yew — Home" onClick={close}>
+            <Image src="/img/logo.png" alt="Café Zen on Yew" width={60} height={60} priority />
           </Link>
 
           <ul className="nav-links" role="list">
@@ -66,7 +62,7 @@ export default function Navbar() {
         <Link href="/#about" onClick={close}>About</Link>
         <Link href="/menu" onClick={close}>Menus</Link>
         <Link href="/contact" onClick={close}>Hours &amp; Contact</Link>
-        <a href="tel:6047314018" className="mobile-phone" onClick={close}>📞 604-731-4018</a>
+        <a href="tel:6047314018" className="mobile-phone" onClick={close}>604-731-4018</a>
       </nav>
     </>
   )

@@ -16,7 +16,7 @@ export default function ContactPage() {
       {/* ── PAGE HERO ──────────────────────────────────────── */}
       <section className="page-hero" aria-label="Page header">
         <div className="container">
-          <span className="script fade-in" style={{ color: 'var(--yellow)' }}>
+          <span className="script fade-in" style={{ color: 'rgba(255,255,255,0.80)' }}>
             We&rsquo;re right in the heart of Kits
           </span>
           <h1 className="fade-in delay-1">Hours &amp; Contact</h1>
@@ -44,7 +44,7 @@ export default function ContactPage() {
             </div>
             <div className="quick-strip-divider">
               <div className="quick-strip-label">Phone</div>
-              <a href="tel:6047314018" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem', fontWeight: 700, color: 'var(--yellow)' }}>
+              <a href="tel:6047314018" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem', fontWeight: 700, color: 'var(--white)' }}>
                 604-731-4018
               </a>
             </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div style={{ marginTop: 20, padding: '16px 20px', background: 'var(--cream-dark)', borderRadius: 8, borderLeft: '3px solid var(--yellow)' }}>
+              <div style={{ marginTop: 20, padding: '16px 20px', background: 'var(--cream-dark)', borderRadius: 6, borderLeft: '3px solid var(--red)' }}>
                 <p style={{ fontSize: '0.88rem', color: '#666', fontStyle: 'italic', margin: 0 }}>
                   Kitchen closes at 3:30 PM. Last seating 30 minutes before closing.
                   We recommend arriving by 3:15 PM for a full meal.
@@ -207,7 +207,7 @@ export default function ContactPage() {
             </div>
 
             {/* Menu CTA Card */}
-            <div className="contact-card fade-in-right" style={{ background: 'var(--cream-dark)', borderTop: '4px solid var(--yellow)' }}>
+            <div className="contact-card fade-in-right" style={{ background: 'var(--cream-dark)', borderTop: '3px solid var(--red)' }}>
               <h3>
                 <span style={{ fontSize: '1.4rem' }} aria-hidden="true">🍽</span>
                 Ready to Eat?

@@ -16,7 +16,7 @@ export default function MenuPage() {
       {/* ── PAGE HERO ──────────────────────────────────────── */}
       <section className="page-hero" aria-label="Page header">
         <div className="container">
-          <span className="script fade-in" style={{ color: 'var(--yellow)' }}>What&rsquo;s cooking today</span>
+          <span className="script fade-in" style={{ color: 'rgba(255,255,255,0.80)' }}>What&rsquo;s cooking today</span>
           <h1 className="fade-in delay-1">Our Menus</h1>
           <p style={{ color: 'rgba(255,255,255,0.75)', marginTop: 12, fontSize: '1.05rem' }} className="fade-in delay-2">
             Fresh, honest food — the same way we&rsquo;ve been making it since 1989.
@@ -52,7 +52,7 @@ export default function MenuPage() {
             {/* BRUNCH CARD */}
             <article className="menu-card fade-in-left" aria-label="Brunch menu">
               <div className="menu-card-header">
-                <span className="script" style={{ color: 'var(--yellow)' }}>Served 8 AM – 4 PM daily</span>
+                <span className="script" style={{ color: 'rgba(255,255,255,0.75)' }}>Served 8 AM – 4 PM daily</span>
                 <h2>Brunch Menu</h2>
               </div>
               <div className="menu-card-body">

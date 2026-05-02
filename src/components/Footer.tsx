@@ -8,9 +8,14 @@ export default function Footer() {
         <div className="footer-grid">
 
           <div className="footer-brand">
-            <Image src="/img/logo.png" alt="Cafe Zen logo" width={56} height={56} style={{ borderRadius: 4, marginBottom: 16 }} />
-            <p className="footer-brand-name">Café Zen on Yew</p>
-            <p className="footer-tagline">A cozy corner of Kitsilano since 1989</p>
+            <Image
+              src="/img/logo.png"
+              alt="Café Zen on Yew"
+              width={64}
+              height={64}
+              style={{ marginBottom: 20, filter: 'brightness(0) invert(1)', opacity: 0.85 }}
+            />
+            <p className="footer-tagline">Kitsilano, Vancouver · Est. 1989</p>
             <p className="footer-desc">Good food, warm space, honest prices. 35 years and still going strong in the heart of Kits.</p>
           </div>
 
@@ -26,16 +31,16 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Visit Us</h4>
-            <div className="footer-hours-row" style={{ marginBottom: 14 }}>
+            <div className="footer-hours-row" style={{ marginBottom: 16 }}>
               <span className="days">Mon – Sun</span>
               <span className="time">8 AM – 4 PM</span>
             </div>
-            <p style={{ fontSize: '0.88rem', color: 'rgba(255,255,255,0.55)' }}>
+            <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.42)', lineHeight: 1.7 }}>
               1631 Yew St<br />Vancouver, BC
             </p>
             <a
               href="tel:6047314018"
-              style={{ display: 'inline-block', marginTop: 10, fontSize: '0.9rem', color: 'var(--yellow)', fontWeight: 700 }}
+              style={{ display: 'inline-block', marginTop: 12, fontSize: '0.88rem', color: 'var(--green-pale)', fontWeight: 700, letterSpacing: '0.04em' }}
             >
               604-731-4018
             </a>
