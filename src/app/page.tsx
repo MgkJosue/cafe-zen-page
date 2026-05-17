@@ -55,8 +55,15 @@ export default function HomePage() {
           <div className="about-grid">
 
             <div className="about-visual fade-in-left">
-              <div className="about-zen-box" aria-hidden="true">
-                <span className="about-zen-char">禅</span>
+              <div className="about-zen-box">
+                <Image
+                  src="/img/logo-zen.png"
+                  alt="Café Zen on Yew"
+                  width={180}
+                  height={180}
+                  unoptimized
+                  className="about-zen-logo"
+                />
                 <span className="about-zen-label">Peace · Nourishment · Community</span>
               </div>
               <div className="about-year-pill" aria-label="Since 1989">

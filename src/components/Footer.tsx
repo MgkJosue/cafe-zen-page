@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -8,13 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
 
           <div className="footer-brand">
-            <Image
-              src="/img/logo-jukebox-bg-removed.png"
-              alt="Café Zen on Yew"
-              width={80}
-              height={80}
-              style={{ marginBottom: 20, filter: 'brightness(0) invert(1)', opacity: 0.80 }}
-            />
+            <p className="footer-brand-name">Café Zen on Yew</p>
             <p className="footer-tagline">Kitsilano, Vancouver · Est. 1989</p>
             <p className="footer-desc">Good food, warm space, honest prices. 35 years and still going strong in the heart of Kits.</p>
           </div>
@@ -50,7 +43,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-credit">
-            &copy; 2025 Café Zen on Yew &nbsp;·&nbsp;
+            &copy; 2026 Café Zen on Yew &nbsp;·&nbsp;
             <a href="https://www.instagram.com/cafezenonyew/" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
@@ -60,7 +53,7 @@ export default function Footer() {
             <a href="https://aj-digital-studio.vercel.app" target="_blank" rel="noopener noreferrer">
               AJ Digital Studio
             </a>{' '}
-            2025
+            2026
           </p>
         </div>
       </div>

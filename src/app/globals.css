@@ -474,12 +474,10 @@ p:last-child { margin-bottom: 0; }
   pointer-events: none;
 }
 
-.about-zen-char {
-  font-size: 6rem;
-  line-height: 1;
-  color: var(--green);
-  font-family: serif;
-  opacity: 0.85;
+.about-zen-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
 }
 
 .about-zen-label {
