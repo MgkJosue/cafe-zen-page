@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     'A cozy corner of Kitsilano since 1989. Fresh brunch and lunch at 1631 Yew St, Vancouver. Open daily 8 AM – 4 PM.',
   keywords: ['cafe zen', 'kitsilano brunch', 'kitsilano lunch', 'vancouver brunch', '1631 yew street', 'cafe zen on yew'],
   icons: {
-    icon: '/img/favicon.png',
+    icon: '/img/logo-zen.png',
   },
   openGraph: {
     type: 'website',

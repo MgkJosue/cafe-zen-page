@@ -1341,3 +1341,200 @@ footer {
 
 /* ── Reviews score display ─────────────────────────────────── */
 .score-right { display: flex; flex-direction: column; gap: 2px; }
+
+/* ── MENU PAGE — Full Item Menu ────────────────────────────── */
+
+/* Sticky anchor navigation */
+.menu-anchor-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--cream-dark);
+  position: sticky;
+  top: 112px;
+  z-index: 100;
+}
+
+.menu-anchor-inner {
+  display: flex;
+  gap: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.menu-anchor-link {
+  font-family: var(--font-lato), sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(30, 30, 30, 0.45);
+  padding: 16px 24px;
+  border-bottom: 2px solid transparent;
+  display: block;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.menu-anchor-link:hover {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+/* Scroll offset so sticky bars don't cover section anchors */
+.menu-section-block {
+  scroll-margin-top: 168px;
+}
+
+/* Section header: label above h2 */
+.menu-section-header {
+  margin-bottom: 52px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.menu-section-header h2 {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+/* Category block */
+.menu-cat {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.menu-cat:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-cat-header { margin-bottom: 20px; }
+
+.menu-cat-title {
+  font-family: var(--font-lato), sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 2px;
+}
+
+.menu-cat-note {
+  font-size: 0.82rem;
+  color: var(--charcoal-lt);
+  font-style: italic;
+  margin: 4px 0 0;
+}
+
+/* Individual menu item row */
+.menu-row {
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.menu-row:last-of-type { border-bottom: none; }
+
+.menu-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.menu-row-name {
+  font-family: var(--font-playfair), serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  flex: 1;
+  line-height: 1.3;
+}
+
+.menu-row-price {
+  font-family: var(--font-playfair), serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--green);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.menu-row-desc {
+  font-size: 0.84rem;
+  color: var(--charcoal-lt);
+  margin: 4px 0 0;
+  line-height: 1.6;
+}
+
+/* Two-column items layout using CSS columns (top → bottom flow) */
+.menu-items-cols {
+  column-count: 2;
+  column-gap: 56px;
+}
+
+.menu-items-cols .menu-row { break-inside: avoid; }
+
+/* Extras / add-ons info strip */
+.menu-extras {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: var(--cream-dark);
+  font-size: 0.82rem;
+  color: var(--charcoal-lt);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  line-height: 1.65;
+}
+
+.menu-extras-label {
+  font-family: var(--font-lato), sans-serif;
+  font-size: 0.60rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Drinks three-column grid */
+.menu-drinks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 56px;
+}
+
+.menu-drinks-col {
+  border-right: 1px solid var(--cream-dark);
+  padding-right: 56px;
+}
+
+.menu-drinks-col:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.menu-drinks-subcol {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--cream-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-anchor-nav { top: 76px; }
+  .menu-section-block { scroll-margin-top: 130px; }
+  .menu-items-cols { column-count: 1; column-gap: 0; }
+  .menu-drinks-grid { grid-template-columns: 1fr; gap: 0; }
+  .menu-drinks-col {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid var(--cream-dark);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .menu-drinks-col:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+}

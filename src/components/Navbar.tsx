@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Center — logo */}
           <Link href="/" className="nav-logo" aria-label="Café Zen on Yew — Home" onClick={close}>
             <Image
-              src="/img/logo-jukebox-bg-removed.png"
+              src="/img/logo-zen.png"
               alt="Café Zen on Yew"
               width={96}
               height={96}
@@ -76,7 +76,7 @@ export default function Navbar() {
         aria-label="Mobile navigation"
       >
         <div className="mobile-nav-logo">
-          <Image src="/img/logo-jukebox-bg-removed.png" alt="Café Zen on Yew" width={80} height={80} />
+          <Image src="/img/logo-zen.png" alt="Café Zen on Yew" width={80} height={80} />
         </div>
         <Link href="/#about" onClick={close}>About</Link>
         <Link href="/menu" onClick={close}>Menus</Link>
