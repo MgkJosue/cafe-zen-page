@@ -7,7 +7,7 @@ import OpenStatus from '@/components/OpenStatus'
 export const metadata: Metadata = {
   title: 'Hours & Contact',
   description:
-    'Find Cafe Zen on Yew in Kitsilano, Vancouver. Open daily 8 AM – 4 PM at 1631 Yew St. Call 604-731-4018.',
+    'Find Cafe Zen on Yew in Kitsilano, Vancouver. Open daily from 8 AM at 1631 Yew St. Call 604-731-4018.',
 }
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
           <span className="page-hero-eyebrow fade-in">1631 Yew St · Kitsilano, Vancouver</span>
           <h1 className="fade-in delay-1" style={{ color: 'var(--white)', position: 'relative', zIndex: 1 }}>Hours &amp; Contact</h1>
           <p style={{ color: 'rgba(255,255,255,0.55)', marginTop: 16, fontSize: '0.95rem', position: 'relative', zIndex: 1 }} className="fade-in delay-2">
-            Open daily 8 AM – 4 PM · Steps from Kitsilano Beach
+            Open daily from 8 AM · Steps from Kitsilano Beach
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <div className="quick-strip fade-in">
             <div>
               <div className="quick-strip-label">Open Daily</div>
-              <div className="quick-strip-value">8 AM – 4 PM</div>
+              <div className="quick-strip-value">From 8 AM</div>
             </div>
             <div className="quick-strip-divider">
               <div className="quick-strip-label">Address</div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <div className="contact-detail-text">
                   <strong>Monday – Friday</strong>
                   <span style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.2rem', fontWeight: 700, color: 'var(--red)' }}>
-                    8:00 AM – 4:00 PM
+                    8:00 AM – 2:30 PM
                   </span>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
               <div className="contact-detail">
                 <span className="contact-detail-icon" aria-hidden="true">🌅</span>
                 <div className="contact-detail-text">
-                  <strong>Saturday &amp; Sunday</strong>
+                  <strong>Weekends &amp; Holidays</strong>
                   <span style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.2rem', fontWeight: 700, color: 'var(--red)' }}>
                     8:00 AM – 4:00 PM
                   </span>
@@ -79,8 +79,8 @@ export default function ContactPage() {
 
               <div style={{ marginTop: 20, padding: '16px 20px', background: 'var(--cream-dark)', borderRadius: 6, borderLeft: '3px solid var(--red)' }}>
                 <p style={{ fontSize: '0.88rem', color: '#666', fontStyle: 'italic', margin: 0 }}>
-                  Kitchen closes at 3:30 PM. Last seating 30 minutes before closing.
-                  We recommend arriving by 3:15 PM for a full meal.
+                  Kitchen closes 30 minutes before closing (2:00 PM weekdays, 3:30 PM weekends &amp; holidays).
+                  Last seating 30 minutes before closing.
                 </p>
               </div>
 

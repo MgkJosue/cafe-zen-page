@@ -24,8 +24,12 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Visit Us</h4>
+            <div className="footer-hours-row">
+              <span className="days">Mon – Fri</span>
+              <span className="time">8 AM – 2:30 PM</span>
+            </div>
             <div className="footer-hours-row" style={{ marginBottom: 16 }}>
-              <span className="days">Mon – Sun</span>
+              <span className="days">Weekends &amp; Holidays</span>
               <span className="time">8 AM – 4 PM</span>
             </div>
             <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.42)', lineHeight: 1.7 }}>

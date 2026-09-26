@@ -5,7 +5,7 @@ import IgIcon from '@/components/IgIcon'
 export const metadata: Metadata = {
   title: 'Our Menu',
   description:
-    'Breakfast, lunch and drinks at Cafe Zen on Yew, Kitsilano. Fresh food served daily 8 AM – 4 PM at 1631 Yew St, Vancouver.',
+    'Breakfast, lunch and drinks at Cafe Zen on Yew, Kitsilano. Fresh food served daily from 8 AM at 1631 Yew St, Vancouver.',
 }
 
 function Item({ name, price, desc }: { name: string; price: string; desc?: string }) {
@@ -62,7 +62,7 @@ export default function MenuPage() {
         <div className="container">
 
           <div className="menu-section-header fade-in">
-            <span className="section-label">Served daily · 8 AM – 4 PM</span>
+            <span className="section-label">Served daily · 8 AM – close</span>
             <h2>Breakfast</h2>
           </div>
 
@@ -153,7 +153,7 @@ export default function MenuPage() {
         <div className="container">
 
           <div className="menu-section-header fade-in">
-            <span className="section-label">Served daily · 11 AM – 4 PM</span>
+            <span className="section-label">Served daily · 11 AM – close</span>
             <h2>Lunch</h2>
           </div>
 

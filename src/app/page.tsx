@@ -83,7 +83,7 @@ export default function HomePage() {
               <div className="about-features">
                 <div className="about-feature">
                   <div className="about-feature-icon" aria-hidden="true">🍳</div>
-                  <p><strong>Fresh brunch &amp; lunch daily</strong> — open 8 AM to 4 PM, seven days a week.</p>
+                  <p><strong>Fresh brunch &amp; lunch daily</strong> — open seven days a week from 8 AM.</p>
                 </div>
                 <div className="about-feature">
                   <div className="about-feature-icon" aria-hidden="true">🌿</div>
@@ -133,13 +133,13 @@ export default function HomePage() {
 
               <div className="hours-row">
                 <span className="hours-day">Monday – Friday</span>
-                <span className="hours-time">8 AM – 4 PM</span>
+                <span className="hours-time">8 AM – 2:30 PM</span>
               </div>
               <div className="hours-row">
-                <span className="hours-day">Saturday &amp; Sunday</span>
+                <span className="hours-day">Weekends &amp; Holidays</span>
                 <span className="hours-time">8 AM – 4 PM</span>
               </div>
-              <p className="hours-note">Kitchen closes at 3:30 PM. Last seating 30 min before close.</p>
+              <p className="hours-note">Kitchen closes &amp; last seating 30 min before close.</p>
 
               <div style={{ marginTop: 32, paddingTop: 24, borderTop: '1px solid var(--cream-dark)' }}>
                 <p className="script" style={{ marginBottom: 14 }}>
